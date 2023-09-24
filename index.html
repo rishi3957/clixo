@@ -10,7 +10,10 @@
     <script type="text/javascript">
       setTimeout(function () {
         window.location.href = "./clixoDetail.html";
-      }, 3000);
+      }, 2000);
+      setTimeout(function () {
+        document.body.style.backgroundColor = "#ffffff";
+      }, 500);
     </script>
   </head>
   <style></style>
@@ -20,10 +23,12 @@
       align-items: center;
       justify-content: center;
       width: 100vw;
+      transition-duration: 1000ms;
       height: 100vh;
-      background-color: orange;
+      background-color: #ff3a00;
+      overflow: hidden;
     "
   >
-    <div style="font-size: 40px; font-weight: 600">Clixo</div>
+    <div style="font-size: 50px; font-weight: 600; color: #ff3a00">Clixo</div>
   </body>
 </html>
