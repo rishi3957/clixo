@@ -19,74 +19,51 @@
 
     <title>Details</title>
     <style></style>
-    <script type="text/javascript">
-      setInterval(function () {
-        plusSlides(1);
-      }, 4000);
-    </script>
-  </head>
-  <body style="overflow-x: hidden">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <div class="main">
       <div class="header">
         <span style="font-size: 40px; font-weight: 800; color: #ff3a00">Clixo</span>
       </div>
       <div class="slider-main">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img
-              src="images/bookOnline.png"
-              style="width: 100%; border-radius: 10px; height: 230px; max-height: 230px"
-            />
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="images/bookOnline.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/doshoot.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/getdata.png"
+                alt=""
+              />
+            </div>
           </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
 
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img
-              src="images/doshoot.png"
-              style="width: 100%; border-radius: 10px; height: 230px; max-height: 230px"
-            />
-          </div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
 
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img
-              src="images/getdata.png"
-              style="width: 100%; border-radius: 10px; height: 230px; max-height: 230px"
-            />
-          </div>
-
-          <a
-            class="prev"
-            onclick="plusSlides(-1)"
-            >❮</a
-          >
-          <a
-            class="next"
-            onclick="plusSlides(1)"
-            >❯</a
-          >
-        </div>
-        <br />
-
-        <div style="text-align: center">
-          <span
-            class="dot"
-            onclick="currentSlide(1)"
-          ></span>
-          <span
-            class="dot"
-            onclick="currentSlide(2)"
-          ></span>
-          <span
-            class="dot"
-            onclick="currentSlide(3)"
-          ></span>
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
       <div
@@ -217,36 +194,35 @@
       </div>
     </div>
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+      const mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 300,
+        mousewheel: true,
+        coverflowEffect: {
+          rotate: 30,
+          slideShadows: true,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
+        // And if we need scrollbar
+      });
 
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
+      //---------------------------------------------------------------
     </script>
   </body>
 </html>
