@@ -29,11 +29,76 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <div class="main">
       <div class="header">
-        <span style="font-size: 40px; font-weight: 800; color: #ff3a00">Clixo</span>
+        <span style="font-size: 35px; font-weight: 800; color: #ff3a00">Clixo</span>
+        <p onclick="openNav()">
+          <i
+            class="fa fa-bars"
+            style="font-size: 30px"
+          ></i>
+        </p>
+      </div>
+      <div
+        id="myNav"
+        class="overlay"
+      >
+        <!-- Create a close button -->
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          onclick="closeNav()"
+          ><i
+            class="fa fa-times"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <span class="menuText">Menu</span>
+
+        <!-- Add some content to the overlay -->
+        <div class="overlay-content">
+          <a
+            href="https://clixoapp.com/"
+            class="menuColor"
+            >Talk To Expert</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >Our Portfolio</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >Share</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >Rate Us</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >Help/Support</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >T&C / Privacy</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuGray"
+            >Training</a
+          >
+          <a
+            href="https://clixoapp.com/"
+            class="menuHero"
+            >Become a Hero</a
+          >
+        </div>
       </div>
       <div class="slider-main">
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -55,15 +120,6 @@
               />
             </div>
           </div>
-          <!-- If we need pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div> -->
-          <!-- <div class="swiper-button-next"></div> -->
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
       <div
@@ -83,15 +139,29 @@
           <div class="r-card">
             <div class="rt-card">
               <div class="rt-l-card">
-                <span style="font-size: 20px; font-weight: 700; margin-bottom: 10px"
+                <span style="font-size: 16px; font-weight: 700; margin-bottom: 10px"
                   >Photo Guy</span
                 >
-                <span style="margin-bottom: 5px">3 hour service</span>
-                <span>30-50 Photos</span>
+                <span style="margin-bottom: 5px; font-size: smaller">3 hour service</span>
+                <span style="font-size: smaller; font-weight: 600; margin-block: 4px"
+                  >30-50* HighQuality Raw Photos</span
+                >
+                <a
+                  href="https://clixoapp.com/"
+                  style="
+                    margin-top: 4px;
+                    text-decoration: underline;
+                    color: goldenrod;
+                    font-size: 10px;
+                  "
+                  >View Details</a
+                >
               </div>
               <div class="rt-r-card">
-                <span style="color: green; font-size: 20px; font-weight: 700">₹5999</span>
-                <span style="color: rgb(150, 5, 5); text-decoration: line-through">₹ 6999</span>
+                <span style="color: green; font-size: 18px; font-weight: 700">₹5999</span>
+                <span style="color: rgb(150, 5, 5); font-size: 12px; text-decoration: line-through"
+                  >₹ 6999</span
+                >
               </div>
             </div>
             <div class="rb-card">
@@ -105,23 +175,38 @@
         </div>
         <div class="photo-card">
           <div class="l-card">
-            <i
-              class="fa fa-caret-square-o-right"
-              style="font-size: 36px"
-            ></i>
+            <img
+              src="images/video.png"
+              alt=""
+              style="width: 50px; margin-left: -10px"
+            />
           </div>
           <div class="r-card">
             <div class="rt-card">
               <div class="rt-l-card">
-                <span style="font-size: 20px; font-weight: 700; margin-bottom: 10px"
+                <span style="font-size: 16px; font-weight: 700; margin-bottom: 10px"
                   >Video Guy</span
                 >
-                <span style="margin-bottom: 5px">3 hour service</span>
-                <span>15-30 Video Clips</span>
+                <span style="margin-bottom: 5px; font-size: smaller">3 hour service</span>
+                <span style="font-size: smaller; font-weight: 600; margin-block: 4px"
+                  >30* HighQuality RawVideos</span
+                >
+                <a
+                  href="https://clixoapp.com/"
+                  style="
+                    margin-top: 4px;
+                    text-decoration: underline;
+                    color: goldenrod;
+                    font-size: 10px;
+                  "
+                  >View Details</a
+                >
               </div>
               <div class="rt-r-card">
-                <span style="color: green; font-size: 20px; font-weight: 700">₹8999</span>
-                <span style="color: rgb(150, 5, 5); text-decoration: line-through">₹ 9999</span>
+                <span style="color: green; font-size: 18px; font-weight: 700">₹8999</span>
+                <span style="color: rgb(150, 5, 5); font-size: 12px; text-decoration: line-through"
+                  >₹ 9999</span
+                >
               </div>
             </div>
             <div class="rb-card">
@@ -135,23 +220,38 @@
         </div>
         <div class="photo-card">
           <div class="l-card">
-            <i
-              class="fa fa-caret-square-o-right"
-              style="font-size: 36px"
-            ></i>
+            <img
+              src="images/drone.png"
+              alt=""
+              style="width: 56px; margin-left: -12px"
+            />
           </div>
           <div class="r-card">
             <div class="rt-card">
               <div class="rt-l-card">
-                <span style="font-size: 20px; font-weight: 700; margin-bottom: 10px"
+                <span style="font-size: 16px; font-weight: 700; margin-bottom: 10px"
                   >Drone Guy</span
                 >
                 <span style="margin-bottom: 5px">3 hour service</span>
-                <span>15-30 Aerial Videos</span>
+                <span style="font-size: smaller; font-weight: 600; margin-block: 4px"
+                  >30* Aerial HD/4K Raw Videos/Photos</span
+                >
+                <a
+                  href="https://clixoapp.com/"
+                  style="
+                    margin-top: 4px;
+                    text-decoration: underline;
+                    color: goldenrod;
+                    font-size: 10px;
+                  "
+                  >View Details</a
+                >
               </div>
               <div class="rt-r-card">
-                <span style="color: green; font-size: 20px; font-weight: 700">₹11999</span>
-                <span style="color: rgb(150, 5, 5); text-decoration: line-through">₹ 13999</span>
+                <span style="color: green; font-size: 18px; font-weight: 700">₹11999</span>
+                <span style="color: rgb(150, 5, 5); font-size: 12px; text-decoration: line-through"
+                  >₹ 13999</span
+                >
               </div>
             </div>
             <div class="rb-card">
@@ -166,24 +266,31 @@
         <div class="photo-card">
           <div class="l-card">
             <i
-              class="fa fa-caret-square-o-right"
+              class="fa fa-building-o"
+              aria-hidden="true"
               style="font-size: 36px"
             ></i>
           </div>
           <div class="r-card">
             <div class="rt-card">
               <div class="rt-l-card">
-                <span style="font-size: 20px; font-weight: 700; margin-bottom: 10px; max-width: 70%"
+                <span style="font-size: 16px; font-weight: 700; margin-bottom: 10px; max-width: 70%"
                   >Corporate Pack</span
                 >
-                <span style="margin-bottom: 5px; max-width: 80%"
+                <span style="margin-bottom: 5px; max-width: 80%; font-size: 12px"
                   >Final video deliver in 25 days</span
                 >
-                <span style="text-decoration: underline; color: goldenrod">View Details</span>
+                <a
+                  href="https://clixoapp.com/"
+                  style="text-decoration: underline; color: goldenrod; font-size: 10px"
+                  >View Details</a
+                >
               </div>
               <div class="rt-r-card">
-                <span style="color: green; font-size: 20px; font-weight: 700">₹74999</span>
-                <span style="color: rgb(150, 5, 5); text-decoration: line-through">₹ 95999</span>
+                <span style="color: green; font-size: 18px; font-weight: 700">₹74999</span>
+                <span style="color: rgb(150, 5, 5); font-size: 12px; text-decoration: line-through"
+                  >₹ 95999</span
+                >
               </div>
             </div>
             <div class="rb-card">
@@ -193,6 +300,20 @@
         </div>
       </div>
     </div>
+    <script>
+      // Define a function to open the overlay
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      // Define a function to close the overlay
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
     <script>
       const mySwiper = new Swiper(".swiper-container", {
         // Optional parameters
