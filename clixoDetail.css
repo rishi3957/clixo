@@ -39,13 +39,12 @@ body {
 .photo-card {
   display: flex;
   width: 90%;
-  border-radius: 10px;
-  padding-block: 5px;
+  border-radius: 20px;
+  padding-block: 15px;
   padding-inline: 20px;
-  margin-block: 5px;
+  margin-bottom: 20px;
   flex-direction: row;
   align-items: center;
-
   background-color: #ebebeb;
 }
 .l-card {
@@ -109,13 +108,14 @@ img {
 .swiper-button-prev {
   opacity: 0.4;
 }
+.swiper-slide {
+  margin-right: 5px;
+}
 .swiper-slide img {
-  width: 100%;
+  width: 98%;
   display: flex;
-  justify-self: center;
-  object-fit: contain;
-  border-width: 10px;
   border-color: black;
+  border-radius: 20px;
 }
 
 .overlay {
