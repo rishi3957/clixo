@@ -20,8 +20,8 @@ body {
   width: 90%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
 }
 
 .list {
@@ -39,13 +39,13 @@ body {
 .photo-card {
   display: flex;
   width: 90%;
-  border-radius: 20px;
-  padding-block: 15px;
+  border-radius: 10px;
+  padding-block: 1.2vh;
   padding-inline: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex-direction: row;
   align-items: center;
-  background-color: #ebebeb;
+  background-color: #f7f7f9;
 }
 .l-card {
   display: flex;
@@ -124,6 +124,7 @@ img {
   position: fixed;
   z-index: 1;
   top: 0;
+  bottom: 0;
   right: 0;
   background-color: rgb(255, 255, 255);
 
@@ -150,13 +151,13 @@ img {
   position: absolute;
   top: 20px;
   right: 30px;
-  font-size: 40px;
+  font-size: 30px;
 }
 .menuText {
   position: absolute;
   top: 25px;
   left: 30px;
-  font-size: 35px;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .menuColor {
