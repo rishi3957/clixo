@@ -16,7 +16,26 @@
       // }, 500);
     </script>
   </head>
-  <style></style>
+  <style>
+    @font-face {
+      font-family: "TTCommonsBold";
+      src: url("images/Fonts/TTCommonsBold.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsMedium";
+      src: url("images/Fonts/TTCommonsMedium.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsRegular";
+      src: url("images/Fonts/TTCommonsRegular.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsBlack";
+      src: url("images/Fonts/TTCommonsBlack.otf") format("opentype"); /* URL to your font file */
+    }
+
+    body {
+      font-family: "TTCommonsBold", Verdana, sans-serif;
+      margin: 0;
+    }
+  </style>
   <body
     style="
       display: flex;
@@ -31,7 +50,9 @@
       align-items: center;
     "
   >
-    <span style="font-size: 80px; font-weight: bolder; color: #fff">clixo</span>
+    <span style="font-size: 80px; font-weight: bolder; color: #fff; letter-spacing: -4px"
+      >clixo</span
+    >
     <span style="font-size: 50px; font-weight: 300; color: #fff; margin-top: -20px">App</span>
     <!-- <video
       width="320"

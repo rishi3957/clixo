@@ -1,9 +1,22 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+  /* font-family: "TTCommonsBold";
+  src: url("images/Fonts/TTCommonsBold.otf") format("opentype");
+
+  font-family: "TTCommonsMedium";
+  src: url("images/Fonts/TTCommonsMedium.otf") format("opentype"); */
+
+  font-family: "TTCommons";
+  src: url("images/Fonts/TTCommonsRegular.otf") format("opentype");
+
+  /* font-family: "TTCommonsBlack";
+  src: url("images/Fonts/TTCommonsBlack.otf") format("opentype"); */
+}
+
 body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
+  font-family: "TTCommons";
 }
 
 .main {
@@ -157,7 +170,7 @@ img {
   position: absolute;
   top: 25px;
   left: 30px;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 600;
 }
 .menuColor {
