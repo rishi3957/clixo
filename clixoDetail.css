@@ -46,8 +46,8 @@ body {
 }
 .offer {
   margin-top: 2vh;
-  margin-bottom: 2vh;
-  font-size: small;
+  margin-bottom: 1.5vh;
+  font-size: 1.5vh;
 }
 .photo-card {
   display: flex;
