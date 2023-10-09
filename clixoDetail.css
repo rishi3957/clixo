@@ -47,8 +47,8 @@ body {
   justify-content: center;
 }
 .offer {
-  margin-top: 2vh;
-  margin-bottom: 1.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   font-size: 1.8vh;
   word-spacing: 2px;
 }
@@ -95,12 +95,12 @@ body {
   background-color: black;
   height: fit-content;
   color: white;
-  padding-block: 8px;
+  padding-block: 5px;
   padding-inline: 30px;
   border-radius: 25px;
   margin-top: -20px;
   font-weight: 800;
-  font-size: 1.6vh;
+  font-size: 2vh;
   letter-spacing: 1px;
   border: 0;
 }
@@ -160,7 +160,7 @@ img {
   width: 100%;
   height: 100%;
   text-align: center;
-  margin-top: 30px;
+
   z-index: 20;
 }
 
@@ -186,8 +186,8 @@ img {
   background-color: #ff3a00;
   border-radius: 30px;
   width: 85%;
-  height: 50px;
-  margin-bottom: 15px;
+  height: 40px;
+  margin-bottom: 10px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -199,8 +199,34 @@ img {
   background-color: #e8e8e8;
   border-radius: 30px;
   width: 85%;
-  height: 50px;
-  margin-bottom: 15px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menuShare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #41a83a;
+  border-radius: 30px;
+  width: 85%;
+  height: 40px;
+  margin-top: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menuShareFacebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #3255ac;
+  border-radius: 30px;
+  width: 85%;
+  height: 40px;
+  margin-top: 10px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -210,10 +236,16 @@ img {
   align-items: center;
   color: rgb(212, 212, 212);
   background-color: #101010;
-  border-radius: 30px;
+  border-radius: 40px;
   width: 85%;
-  height: 50px;
-  margin-top: 15px;
+  height: 40px;
+  margin-top: 10px;
   font-weight: 600;
   text-decoration: none;
+}
+
+.share {
+  display: flex;
+  /* width: 50px;
+  height: 50px; */
 }
