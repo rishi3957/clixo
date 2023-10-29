@@ -54,7 +54,7 @@ body {
 }
 .photo-card {
   display: flex;
-  width: 90%;
+  width: 92%;
   border-radius: 10px;
   padding-block: 0.7vh;
   padding-inline: 20px;
@@ -95,10 +95,10 @@ body {
   background-color: black;
   height: fit-content;
   color: white;
-  padding-block: 8px;
+  padding-block: 7px;
   padding-inline: 30px;
   border-radius: 25px;
-  margin-top: -20px;
+  margin-top: -25px;
   font-weight: 800;
   font-size: 2vh;
   letter-spacing: 1px;
