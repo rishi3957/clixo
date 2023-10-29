@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "TTCommonsBold";
+      src: url("images/Fonts/TTCommonsBold.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsMedium";
+      src: url("images/Fonts/TTCommonsMedium.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsRegular";
+      src: url("images/Fonts/TTCommonsRegular.otf") format("opentype"); /* URL to your font file */
+
+      font-family: "TTCommonsBlack";
+      src: url("images/Fonts/TTCommonsBlack.otf") format("opentype"); /* URL to your font file */
+    }
+    body {
+      font-family: "TTCommonsBold", Verdana, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+    .head {
+      display: flex;
+      justify-content: center;
+    }
+    .head img {
+      display: flex;
+      width: 280px;
+    }
+    .user-1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+    }
+    .user-1 p {
+      display: flex;
+      text-align: center;
+      font-size: x-small;
+      font-weight: 600;
+      width: 90%;
+      line-height: 15px;
+    }
+    .menuColor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-color: #ff3a00;
+      border-radius: 30px;
+      width: 110%;
+      height: 48px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="head">
+      <img
+        src="images/App Banners/clixoUser.png"
+        alt=""
+      />
+    </div>
+    <div class="user-1">
+      <p>
+        Choose Customer, If you are looking <br />
+        for a photographer, videographer or Drone pilot
+      </p>
+      <a
+        href="./clixoDetail.html"
+        class="menuColor"
+        >CUSTOMER</a
+      >
+    </div>
+    <div class="user-1">
+      <p style="text-align: center; justify-content: center">
+        Join as a photographer, videographer or<br />
+        Drone pilot & Earn money
+      </p>
+      <a
+        href="https://clixoapp.com/become-a-hero"
+        class="menuColor"
+        style="background-color: #101010; color: rgb(212, 212, 212)"
+        >BECOME A HERO</a
+      >
+    </div>
+  </body>
+</html>
